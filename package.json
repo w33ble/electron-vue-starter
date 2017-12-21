@@ -4,13 +4,14 @@
   "private": true,
   "version": "0.0.0",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "precommit": "lint-staged",
+    "lint": "eslint index.js src/**"
   },
   "keywords": [],
   "author": "Joe Fleming",
@@ -18,16 +19,9 @@
   "config": {
     "forge": {
       "make_targets": {
-        "win32": [
-          "squirrel"
-        ],
-        "darwin": [
-          "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
-        ]
+        "win32": ["squirrel"],
+        "darwin": ["zip"],
+        "linux": ["deb", "rpm"]
       },
       "electronPackagerConfig": {
         "packageManager": "yarn"
@@ -47,6 +41,15 @@
       }
     }
   },
+  "lint-staged": {
+    "*.{js,json,css}": "prettier --write",
+    "*.vue": "eslint --fix"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "electron": "^1.7.10",
     "electron-compile": "^6.4.2",
@@ -60,6 +63,14 @@
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "electron-forge": "^4.1.6",
-    "electron-prebuilt-compile": "1.8.2-beta.3"
+    "electron-prebuilt-compile": "1.8.2-beta.3",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-vue": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.0"
   }
 }

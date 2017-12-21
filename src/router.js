@@ -9,9 +9,9 @@ const router = new VueRouter({
       name: 'home',
       component: Home,
       props: {
-        message: 'Electron + Vue = Win!'
+        message: 'Electron + Vue = Win!',
       },
-    }
+    },
   ],
 });
 

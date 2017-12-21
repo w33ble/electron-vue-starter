@@ -1,3 +1,4 @@
+/* eslint-env node */
 import { app, BrowserWindow } from 'electron';
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer';
 import { enableLiveReload } from 'electron-compile';
@@ -21,7 +22,7 @@ const createWindow = async () => {
   mainWindow = new BrowserWindow(windowConfig);
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/src/index.html`);
 
   // Open the DevTools.
   if (isDevMode) {
