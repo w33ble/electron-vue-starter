@@ -6,15 +6,23 @@
   </head>
 
   <body>
-    <div id="test"></div>
+    <div id="app"></div>
   </body>
 
   <script>
     import Vue from 'vue';
-    import Test from './test';
+    import VueRouter from 'vue-router';
+    import Electron from 'vue-electron';
+    import router from './router';
+    import App from './App.vue';
 
-    const app = new Vue(Test).$mount('#test');
+    Vue.use(VueRouter);
+    Vue.use(Electron);
 
-    app.text = "Electron Forge with Vue.js!";
+    const app = new Vue({
+      router,
+      el: '#app',
+      render: h => h(App),
+    });
   </script>
 </html>
