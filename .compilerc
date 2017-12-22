@@ -16,6 +16,9 @@
           "transform-async-to-generator"
         ],
         "sourceMaps": "inline"
+      },
+      "text/less": {
+        "dumpLineNumbers": "comments"
       }
     },
     "production": {
