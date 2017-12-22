@@ -3,47 +3,60 @@
 ------------------------------------------------------------*/
 
 /*base form styles*/
-input[type=text], input[type=password], input[type=email], input[type=search], select {
-    width: 100%;
-    padding: 6px 6px;
-    /*margin: 8px 0;*/
-    background-color: #fff;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    box-sizing: border-box;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    /*font-family: 'Open Sans';*/
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='search'],
+select {
+  width: 100%;
+  padding: 6px 6px;
+  /*margin: 8px 0;*/
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  outline: none;
+  /*font-family: 'Open Sans';*/
 }
 
 /*styling textarea*/
-textarea, textarea[type=text] {
-    /*font-family: 'Open Sans';*/
-    width: 100%;
-    height: 100px;
-    /*margin: 8px 0;*/
-    background-color: #fff;
-    padding: 6px 6px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    resize: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+textarea,
+textarea[type='text'] {
+  /*font-family: 'Open Sans';*/
+  width: 100%;
+  height: 100px;
+  /*margin: 8px 0;*/
+  background-color: #fff;
+  padding: 6px 6px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  resize: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
 
 /*set border on focus*/
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=search]:focus, textarea:focus, textarea[type=text]:focus {
-    border: 1px solid #99b3ff;
-    border-radius: 4px;
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='search']:focus,
+textarea:focus,
+textarea[type='text']:focus {
+  border: 1px solid #680148;
+  border-radius: 4px;
 }
 
 select {
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 0px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select:focus {
+  border-color: #680148;
+  outline: none;
 }

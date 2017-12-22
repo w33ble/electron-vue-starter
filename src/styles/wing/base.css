@@ -2,6 +2,10 @@
   Base Style
 ------------------------------------------------------------*/
 
+/*
+colors: http://www.colourlovers.com/palette/4528713/Get_at_me;
+*/
+
 /*making font-sizes base 10*/
 html {
   box-sizing: border-box;
@@ -12,9 +16,11 @@ html {
 
 /*setting up font sizes and base font family*/
 body {
+  color: #030c22;
   letter-spacing: 0.01em;
   line-height: 1.6;
   font-size: 14px;
   font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, 'Avenir Next', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
