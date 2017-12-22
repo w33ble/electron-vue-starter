@@ -9,7 +9,7 @@
       closeApp() {
         const win = this.$electron.remote.BrowserWindow.getFocusedWindow();
         win.close();
-      }
-    }
+      },
+    },
   };
 </script>

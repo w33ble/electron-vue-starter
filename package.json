@@ -11,7 +11,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "precommit": "lint-staged",
-    "lint": "eslint index.js src/**"
+    "lint": "eslint index.js src/**/*.{js,vue}"
   },
   "keywords": [],
   "author": "Joe Fleming",
