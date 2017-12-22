@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router';
 import Home from './pages/Home.vue';
+import Demo from './pages/Demo.vue';
 
 const router = new VueRouter({
   mode: 'hash',
@@ -11,6 +12,11 @@ const router = new VueRouter({
       props: {
         message: 'Electron + Vue = Win!',
       },
+    },
+    {
+      path: '/demo',
+      name: 'demo',
+      component: Demo,
     },
   ],
 });
