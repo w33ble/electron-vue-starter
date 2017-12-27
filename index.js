@@ -11,9 +11,10 @@ const isDevMode = process.execPath.match(/[\\/]electron/);
 
 if (isDevMode) enableLiveReload();
 
+const debuggerSize = isDevMode ? 500 : 0;
 const createWindow = async () => {
   const windowConfig = {
-    width: isDevMode ? 960 + 500 : 960,
+    width: 320 + debuggerSize,
     height: 768,
     frame: Boolean(isDevMode),
   };

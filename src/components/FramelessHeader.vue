@@ -3,7 +3,7 @@
     <div class="nav-logo">
       Status Hub
     </div>
-    <router-link class="nav-item btn btn-text" :to="{ name: 'home' }">
+    <router-link class="nav-item btn btn-text" :to="{ name: 'buddylist' }">
       Home
     </router-link>
     <router-link class="nav-item btn btn-text" :to="{ name: 'demo' }">
